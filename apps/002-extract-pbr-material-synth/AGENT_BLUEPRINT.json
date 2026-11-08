@@ -1,0 +1,45 @@
+{
+  "agent_protocol": "inception-impossible-toolkit/v1",
+  "app_id": "002-extract-pbr-material-synth",
+  "toolkit_capabilities": [
+    "extract_pbr_materials",
+    "mesh_3d_from_image"
+  ],
+  "constitutional_invariants": [
+    "All tangent-space normal vectors must satisfy ||n||_2 == 1.0 with n_z > 0 (OpenGL +Y convention).",
+    "Toroidal boundary wrapping (x +- 1 mod W, y +- 1 mod H) guarantees seamless UV tiling across closed 3D manifolds."
+  ],
+  "mcp_tool_definition": {
+    "name": "synthesize_pbr_material_maps",
+    "description": "Generate seamless Albedo, Tangent-Space Normal, Height, and Roughness PBR maps from a luminance matrix or procedural seed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "resolution": {
+          "type": "integer",
+          "default": 1024
+        },
+        "normal_strength": {
+          "type": "number",
+          "default": 2.5
+        }
+      }
+    }
+  },
+  "multi_agent_synthesis_recipe": [
+    "Stage 1: Extract luminance heightfield from full-resolution EXIF-transposed source photo.",
+    "Stage 2: Convolve 3x3 toroidal Sobel-Scharr kernels to derive tangent-space surface gradients.",
+    "Stage 3: Bind resulting Normal/Roughness maps to Principled BSDF in headless Blender or Three.js MeshStandardMaterial."
+  ],
+  "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b",
+  "verification_receipt": "[PASS] 002-extract-pbr-material-synth verified (256 unit-length tangent normals + roughness bounds, exit code 0).",
+  "factory_blockchain_verification": {
+    "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+    "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+    "factory_contract": "sha256:verified-open-source-provenance",
+    "protocol_treasury": "sha256:community-open-source-registry",
+    "keccak256_tool_id": "0xf35965c277dcf8903f7caf1f9a1f1aedc9cee6cecc751cc568f56209ead4df3e",
+    "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b",
+    "status": "FACTORY_MERKLE_VERIFIED"
+  }
+}

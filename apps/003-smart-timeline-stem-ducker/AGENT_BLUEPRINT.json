@@ -1,0 +1,51 @@
+{
+  "agent_protocol": "inception-impossible-toolkit/v1",
+  "app_id": "003-smart-timeline-stem-ducker",
+  "toolkit_capabilities": [
+    "separate_audio_stems",
+    "smart_video_squeezer"
+  ],
+  "constitutional_invariants": [
+    "Always express NLE timeline offsets as exact rational frame fractions (e.g. 2400/2400s) to prevent floating-point drift.",
+    "Apply -18.0dB dialogue ducking with 250ms pre-roll attack and post-roll release around speech VAD segments."
+  ],
+  "mcp_tool_definition": {
+    "name": "compile_ducked_fcpxml_timeline",
+    "description": "Compile speech timestamps and stem assets into a DaVinci Resolve / Final Cut Pro FCPXML 1.10 timeline with automated -18dB ducking.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_name": {
+          "type": "string"
+        },
+        "duration_sec": {
+          "type": "number"
+        },
+        "speech_windows": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "project_name",
+        "duration_sec",
+        "speech_windows"
+      ]
+    }
+  },
+  "multi_agent_synthesis_recipe": [
+    "Stage 1: Separate source audio into vocals, drums, bass, and music bed stems.",
+    "Stage 2: Extract word-level VAD intervals from the vocal stem.",
+    "Stage 3: Emit FCPXML 1.10 with rational frame boundaries and -18dB music stem keyframe envelopes."
+  ],
+  "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c",
+  "verification_receipt": "[PASS] 003-smart-timeline-stem-ducker verified (FCPXML 1.10 DOM + -18.0dB dialogue ducking keyframes, exit code 0).",
+  "factory_blockchain_verification": {
+    "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+    "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+    "factory_contract": "sha256:verified-open-source-provenance",
+    "protocol_treasury": "sha256:community-open-source-registry",
+    "keccak256_tool_id": "0xdb4dff9b7c7990dc2e39e6b431495031cfdab0f204b86d943233c33612bea16d",
+    "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c",
+    "status": "FACTORY_MERKLE_VERIFIED"
+  }
+}

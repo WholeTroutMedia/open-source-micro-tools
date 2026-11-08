@@ -1,0 +1,43 @@
+{
+  "protocol": "a2a-mcp-beacon/1.0",
+  "organization": "WholeTroutMedia",
+  "human_principal": {
+    "name": "Justin Aharoni",
+    "github": "https://github.com/jaharoni",
+    "email": "contact@jaharoni.com",
+    "website": "https://justinaharoni.com"
+  },
+  "repositories": {
+    "applications_hub": "https://github.com/WholeTroutMedia/open-source-micro-tools",
+    "creative_liberation_engine": "https://github.com/WholeTroutMedia/creative-liberation-engine",
+    "bounties_and_fixes_hub": "https://github.com/WholeTroutMedia/open-source-bounties"
+  },
+  "llms_txt": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/llms.txt",
+  "registry": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/registry/applications.json",
+  "modules": [
+    {
+      "app_id": "000-cle-foundation-seed-os",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-cle-foundation-seed-os/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-cle-foundation-seed-os/SKILL.md",
+      "engine_sha256": "dfb2b5c27d03c29a32749007db2fe3b33ed94d62ac95c781aed590a5f47b8b11"
+    },
+    {
+      "app_id": "001-seal-pdf-media-notary",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/001-seal-pdf-media-notary/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/001-seal-pdf-media-notary/SKILL.md",
+      "engine_sha256": "2eeeecb92072bbebdc3eb77a394ab4e05518e8d078eb31ff49e2286081622f87"
+    },
+    {
+      "app_id": "002-extract-pbr-material-synth",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/002-extract-pbr-material-synth/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/002-extract-pbr-material-synth/SKILL.md",
+      "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b"
+    },
+    {
+      "app_id": "003-smart-timeline-stem-ducker",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/003-smart-timeline-stem-ducker/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/003-smart-timeline-stem-ducker/SKILL.md",
+      "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "agent_protocol": "creative-liberation-engine/v1",
+  "app_id": "000-cle-foundation-seed-os",
+  "name": "Creative Liberation Engine",
+  "companion_repository": "https://github.com/WholeTroutMedia/creative-liberation-engine",
+  "toolkit_capabilities": [
+    "shape_creative_flow",
+    "curate_active_palette",
+    "verify_finished_work"
+  ],
+  "constitutional_invariants": [
+    "Adapt fluidly to the vision and intent of the person using the engine without imposing rigid boundaries.",
+    "Keep the active workspace clear and focused on what matters in the moment.",
+    "Deliver complete, finished work ready to experience."
+  ],
+  "mcp_tool_definition": {
+    "name": "creative_liberation_engine",
+    "description": "An open creative foundation shaped by the imagination of the person using it.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "intent_depth": {
+          "type": "number",
+          "default": 0.3
+        },
+        "parallel_streams": {
+          "type": "integer",
+          "default": 1
+        },
+        "canvas_capacity": {
+          "type": "integer",
+          "default": 15000
+        }
+      }
+    }
+  },
+  "multi_agent_synthesis_recipe": [
+    "Stage 1: Listen to the creator's intent and shape the flow via shape_creative_flow().",
+    "Stage 2: Curate the active palette for the work at hand via curate_active_palette().",
+    "Stage 3: Verify that the resulting creation is complete via verify_finished_work()."
+  ],
+  "engine_sha256": "dfb2b5c27d03c29a32749007db2fe3b33ed94d62ac95c781aed590a5f47b8b11",
+  "verification_receipt": "[PASS] 000-cle-foundation-seed-os (Creative Liberation Engine) verified (exit code 0).",
+  "factory_blockchain_verification": {
+    "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+    "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+    "factory_contract": "sha256:verified-open-source-provenance",
+    "protocol_treasury": "sha256:community-open-source-registry",
+    "keccak256_tool_id": "0xf2ca0731c4ddd9e80111b3fc74a3bc07089a447078f5de0926faf3b051ce9d16",
+    "engine_sha256": "dfb2b5c27d03c29a32749007db2fe3b33ed94d62ac95c781aed590a5f47b8b11",
+    "status": "FACTORY_MERKLE_VERIFIED"
+  }
+}

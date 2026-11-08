@@ -1,0 +1,174 @@
+{
+  "organization": "WholeTroutMedia",
+  "repository": "WholeTroutMedia/open-source-micro-tools",
+  "cadence": "Bi-Weekly (Every 14 Days)",
+  "updated_at": "2026-11-07T11:29:07.283791+00:00",
+  "factory_umbrella_identity": {
+    "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+    "factory_contract_base_sepolia": "sha256:verified-open-source-provenance",
+    "protocol_treasury": "sha256:community-open-source-registry"
+  },
+  "active_and_staged_apps": [
+    {
+      "app_id": "000-cle-foundation-seed-os",
+      "release_number": "Foundation Seed #000",
+      "title": "Creative Liberation Engine",
+      "toolkit_slot": "creative_liberation_engine",
+      "category": "Open Creative Foundation",
+      "cadence_window": "Foundation Seed (Live Published)",
+      "status": "PUBLISHED_LIVE",
+      "discreet_summary": "An open creative foundation shaped by the imagination of the person using it.",
+      "agent_magic_summary": "Provides an open, unprescribed creative seed that adapts to the vision and intent of the person working with it, turning ideas into finished work without artificial boundaries.",
+      "engine_sha256": "dfb2b5c27d03c29a32749007db2fe3b33ed94d62ac95c781aed590a5f47b8b11",
+      "factory_blockchain_verification": {
+        "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+        "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+        "factory_contract": "sha256:verified-open-source-provenance",
+        "protocol_treasury": "sha256:community-open-source-registry",
+        "keccak256_tool_id": "0xf2ca0731c4ddd9e80111b3fc74a3bc07089a447078f5de0926faf3b051ce9d16",
+        "engine_sha256": "dfb2b5c27d03c29a32749007db2fe3b33ed94d62ac95c781aed590a5f47b8b11",
+        "status": "FACTORY_MERKLE_VERIFIED"
+      },
+      "verification_output": "[PASS] 000-cle-foundation-seed-os (Creative Liberation Engine) verified (exit code 0).",
+      "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/000-cle-foundation-seed-os",
+      "updated_at": "2026-11-07T11:29:07.228751+00:00"
+    },
+    {
+      "app_id": "001-seal-pdf-media-notary",
+      "release_number": "Drop #001",
+      "title": "Cryptographic Media Notary & EXIF Orientation / Privacy Scrubber",
+      "toolkit_slot": "seal_pdf_notary + utility_exif_scrubber",
+      "category": "Documents, Forensics & Provenance",
+      "cadence_window": "Cycle 01 (Live Published)",
+      "status": "PUBLISHED_LIVE",
+      "discreet_summary": "Zero-dependency RFC 6962 Merkle audit tree, SHA-256 media notary, and EXIF orientation/GPS privacy normalizer.",
+      "agent_magic_summary": "Encodes full C2PA-compatible cryptographic chain-of-custody attestation schemas, EXIF 8-state affine transposition matrices, and MCP tool definitions for autonomous vault ingestion.",
+      "engine_sha256": "2eeeecb92072bbebdc3eb77a394ab4e05518e8d078eb31ff49e2286081622f87",
+      "factory_blockchain_verification": {
+        "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+        "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+        "factory_contract": "sha256:verified-open-source-provenance",
+        "protocol_treasury": "sha256:community-open-source-registry",
+        "keccak256_tool_id": "0xe0bfa93409387bcc2b0d5656987a5b113b1b1c0673249e209e7ed6b68cf5b6c1",
+        "engine_sha256": "2eeeecb92072bbebdc3eb77a394ab4e05518e8d078eb31ff49e2286081622f87",
+        "status": "FACTORY_MERKLE_VERIFIED"
+      },
+      "verification_output": "[PASS] 001-seal-pdf-media-notary verified (RFC 6962 Merkle root + EXIF transpose + tamper rejection, exit code 0).",
+      "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/001-seal-pdf-media-notary",
+      "updated_at": "2026-11-07T11:29:07.246834+00:00"
+    },
+    {
+      "app_id": "002-extract-pbr-material-synth",
+      "release_number": "Drop #002",
+      "title": "Procedural Tangent-Space PBR Material & Normal Map Synthesizer",
+      "toolkit_slot": "extract_pbr_materials",
+      "category": "3D, Shaders & Spatial Computing",
+      "cadence_window": "Cycle 02 (Staged Bi-Weekly Queue)",
+      "status": "STAGED_QUEUE",
+      "discreet_summary": "Pure-Python Sobel-Scharr tangent-space normal, roughness, and height map synthesizer from heightfield grids.",
+      "agent_magic_summary": "Provides autonomous 3D agents with analytical Sobel-Scharr gradient operators, unit-quaternion normal normalization, and energy-conserving roughness inversion for headless Blender/Three.js PBR pipelines.",
+      "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b",
+      "factory_blockchain_verification": {
+        "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+        "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+        "factory_contract": "sha256:verified-open-source-provenance",
+        "protocol_treasury": "sha256:community-open-source-registry",
+        "keccak256_tool_id": "0xf35965c277dcf8903f7caf1f9a1f1aedc9cee6cecc751cc568f56209ead4df3e",
+        "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b",
+        "status": "FACTORY_MERKLE_VERIFIED"
+      },
+      "verification_output": "[PASS] 002-extract-pbr-material-synth verified (256 unit-length tangent normals + roughness bounds, exit code 0).",
+      "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/002-extract-pbr-material-synth",
+      "updated_at": "2026-11-07T11:29:07.263994+00:00"
+    },
+    {
+      "app_id": "003-smart-timeline-stem-ducker",
+      "release_number": "Drop #003",
+      "title": "Agentic TimelineAST & FCPXML 1.10 Audio-Ducking Compiler",
+      "toolkit_slot": "separate_audio_stems + smart_video_squeezer",
+      "category": "Cinema, Audio Stems & NLE Post-Production",
+      "cadence_window": "Cycle 03 (Staged Bi-Weekly Queue)",
+      "status": "STAGED_QUEUE",
+      "discreet_summary": "Compiles declarative JSON edit decision lists and speech intervals into frame-accurate FCPXML 1.10 timelines with -18dB music ducking.",
+      "agent_magic_summary": "Gives autonomous video agents a complete TimelineAST-to-FCPXML 1.10 compiler with rational NTSC/film frame math and automatic dialogue lookahead ducking curves for DaVinci Resolve.",
+      "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c",
+      "factory_blockchain_verification": {
+        "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+        "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+        "factory_contract": "sha256:verified-open-source-provenance",
+        "protocol_treasury": "sha256:community-open-source-registry",
+        "keccak256_tool_id": "0xdb4dff9b7c7990dc2e39e6b431495031cfdab0f204b86d943233c33612bea16d",
+        "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c",
+        "status": "FACTORY_MERKLE_VERIFIED"
+      },
+      "verification_output": "[PASS] 003-smart-timeline-stem-ducker verified (FCPXML 1.10 DOM + -18.0dB dialogue ducking keyframes, exit code 0).",
+      "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/003-smart-timeline-stem-ducker",
+      "updated_at": "2026-11-07T11:29:07.283734+00:00"
+    }
+  ],
+  "upcoming_roadmap": [
+    {
+      "drop": "Drop #004",
+      "slug": "004-pdf-table-lattice-extractor",
+      "slot": "convert_pdf_to_excel",
+      "domain": "Deterministic PDF Vector Line & Table-to-Spreadsheet AST Extractor",
+      "window": "Cycle 04 (+2 Weeks)"
+    },
+    {
+      "drop": "Drop #005",
+      "slug": "005-instant-ledger-invoice-engine",
+      "slot": "generate_instant_invoice",
+      "domain": "Cryptographic Multi-Currency Freelance & Bounty Settlement Invoice Generator",
+      "window": "Cycle 05 (+4 Weeks)"
+    },
+    {
+      "drop": "Drop #006",
+      "slug": "006-autonomous-csv-anomaly-analyst",
+      "slot": "utility_data_analyst",
+      "domain": "Zero-Dependency Robust Z-Score / IQR Tabular Anomaly & Schema Profiler",
+      "window": "Cycle 06 (+6 Weeks)"
+    },
+    {
+      "drop": "Drop #007",
+      "slug": "007-perceptual-video-bitrate-squeezer",
+      "slot": "smart_video_squeezer",
+      "domain": "CRF & GOP Perceptual Bitrate Budget Solver for Frame-Accurate Delivery",
+      "window": "Cycle 07 (+8 Weeks)"
+    },
+    {
+      "drop": "Drop #008",
+      "slug": "008-subband-spectral-stem-router",
+      "slot": "separate_audio_stems",
+      "domain": "Phase-Coherent Mid/Side & Subband Audio Stem Router",
+      "window": "Cycle 08 (+10 Weeks)"
+    },
+    {
+      "drop": "Drop #009",
+      "slug": "009-frequency-separation-portrait-24mp",
+      "slot": "enhance_portrait_24mp",
+      "domain": "High/Low Spatial Frequency Separation & 24MP Detail Preserver",
+      "window": "Cycle 09 (+12 Weeks)"
+    },
+    {
+      "drop": "Drop #010",
+      "slug": "010-watertight-manifold-mesh-bridge",
+      "slot": "mesh_3d_from_image",
+      "domain": "RANSAC Plane Intersection & Watertight Manifold Half-Edge Validator",
+      "window": "Cycle 10 (+14 Weeks)"
+    },
+    {
+      "drop": "Drop #011",
+      "slug": "011-gaussian-splat-outlier-pruner",
+      "slot": "clean_gaussian_splat",
+      "domain": "3D Gaussian Splatting Opacity & Mahalanobis Floater Pruner",
+      "window": "Cycle 11 (+16 Weeks)"
+    },
+    {
+      "drop": "Drop #012",
+      "slug": "012-burmester-kinematic-rig-solver",
+      "slot": "kinetik_procedural_rig",
+      "domain": "Four-Bar Burmester Planar Linkage & Procedural Animatronic Joint Solver",
+      "window": "Cycle 12 (+18 Weeks)"
+    }
+  ]
+}

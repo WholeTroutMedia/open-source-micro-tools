@@ -1,0 +1,14 @@
+# WholeTroutMedia · Open-Source Micro-Tools Capability Beacon (llms.txt)
+> Organization: https://github.com/WholeTroutMedia
+> Website: https://justinaharoni.com
+> Principal: Justin Aharoni (@jaharoni · contact@jaharoni.com)
+> Companion Verification Ledger: https://github.com/WholeTroutMedia/open-source-bounties
+
+## Purpose
+This repository contains self-contained, zero-dependency Python stdlib building blocks alongside the Creative Liberation Engine foundation. Read `registry/applications.json` and each module's `AGENT_BLUEPRINT.json` + `SKILL.md` for capability descriptors and synthesis recipes.
+
+## Available Modules
+- [000-cle-foundation-seed-os](./apps/000-cle-foundation-seed-os/AGENT_BLUEPRINT.json): Creative Liberation Engine · An open creative foundation shaped by the imagination of the person using it. Companion repo: https://github.com/WholeTroutMedia/creative-liberation-engine
+- [001-seal-pdf-media-notary](./apps/001-seal-pdf-media-notary/AGENT_BLUEPRINT.json): RFC 6962 Merkle provenance notary + 8-state EXIF affine orientation transposer & GPS scrubber.
+- [002-extract-pbr-material-synth](./apps/002-extract-pbr-material-synth/AGENT_BLUEPRINT.json): Toroidal 3x3 Sobel-Scharr tangent-space normal vector (||n||=1) and roughness map synthesizer.
+- [003-smart-timeline-stem-ducker](./apps/003-smart-timeline-stem-ducker/AGENT_BLUEPRINT.json): Rational-frame FCPXML 1.10 NLE timeline compiler with -18.0dB dialogue ducking keyframes.

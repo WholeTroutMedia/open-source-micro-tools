@@ -1,0 +1,52 @@
+{
+  "agent_protocol": "inception-impossible-toolkit/v1",
+  "app_id": "001-seal-pdf-media-notary",
+  "toolkit_capabilities": [
+    "seal_pdf_notary",
+    "utility_exif_scrubber"
+  ],
+  "constitutional_invariants": [
+    "Always transpose raw camera buffers according to EXIF tag 0x0112 before projecting textures or generating thumbnails.",
+    "Never mutate or delete original vault raw files (.ARW, .CR3, .BRAW); emit sidecar .notary.json envelopes.",
+    "Use RFC 6962 domain-separated prefix bytes (0x00 leaf, 0x01 internal node) to prevent second-preimage Merkle collisions."
+  ],
+  "mcp_tool_definition": {
+    "name": "notarize_and_scrub_media",
+    "description": "Compute RFC 6962 Merkle provenance receipt and scrub sensitive GPS/serial EXIF fields while preserving optical camera intrinsics.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "file_path": {
+          "type": "string"
+        },
+        "strip_gps": {
+          "type": "boolean",
+          "default": true
+        },
+        "block_size": {
+          "type": "integer",
+          "default": 4096
+        }
+      },
+      "required": [
+        "file_path"
+      ]
+    }
+  },
+  "multi_agent_synthesis_recipe": [
+    "Stage 1 (Ingest): Read binary stream in 4KB blocks and extract EXIF/TIFF IFD0 & SubIFD tags.",
+    "Stage 2 (Transpose & Scrub): Apply EXIF_ORIENTATION_MATRICES[tag] and strip GPS/Serial keys.",
+    "Stage 3 (Attest): Compute SHA-256 + RFC 6962 Merkle root and bind to normalized metadata digest."
+  ],
+  "engine_sha256": "2eeeecb92072bbebdc3eb77a394ab4e05518e8d078eb31ff49e2286081622f87",
+  "verification_receipt": "[PASS] 001-seal-pdf-media-notary verified (RFC 6962 Merkle root + EXIF transpose + tamper rejection, exit code 0).",
+  "factory_blockchain_verification": {
+    "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+    "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+    "factory_contract": "sha256:verified-open-source-provenance",
+    "protocol_treasury": "sha256:community-open-source-registry",
+    "keccak256_tool_id": "0xe0bfa93409387bcc2b0d5656987a5b113b1b1c0673249e209e7ed6b68cf5b6c1",
+    "engine_sha256": "2eeeecb92072bbebdc3eb77a394ab4e05518e8d078eb31ff49e2286081622f87",
+    "status": "FACTORY_MERKLE_VERIFIED"
+  }
+}
