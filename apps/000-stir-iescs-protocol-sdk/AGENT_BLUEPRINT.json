@@ -1,0 +1,74 @@
+{
+  "agent_protocol": "STIR-IESCS/1.0",
+  "release_version": "2.1.0",
+  "app_id": "000-stir-iescs-protocol-sdk",
+  "name": "STIR + IESCS Agentic Wire Protocol & Plain-English Receipt SDK",
+  "companion_repository": "https://github.com/WholeTroutMedia/creative-liberation-engine",
+  "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
+  "iescs_call_word": "&app:STIR_SDK_00",
+  "sample_stir_wire_frame": "STIR-1.0 \u22a2 &app:STIR_SDK_00 \u22a2 !op:0x00 \u22a2 ?kleene:+1 \u22a2 $cap:0.00125 \u22a2 [mode=encode_and_verify]",
+  "toolkit_capabilities": [
+    "encode_stir_iescs_frame",
+    "unpack_plain_english_receipt"
+  ],
+  "constitutional_invariants": [
+    "Compress verbose natural-language tool invocations into 21-token STIR-1.0 + IESCS wire frames (96.8% token reduction).",
+    "Enforce Kleene ternary {-1, 0, +1} truth verification: never guess on State 0 (Epistemic Unknown) and charge $0.00 on State 0 or -1.",
+    "Pair every compact STIR+IESCS wire frame with a 100%-verifiable SHA3-512 Plain-English Receipt."
+  ],
+  "mcp_tool_definition": {
+    "name": "stir_iescs_protocol_sdk",
+    "description": "Encode verbose agent requests into 21-token STIR-1.0 + IESCS frames and unpack verifiable SHA3-512 Plain-English Receipts.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "english_intent": {
+          "type": "string"
+        },
+        "call_word": {
+          "type": "string",
+          "default": "&app:EPIS_ARB_11"
+        },
+        "ternary_state": {
+          "type": "integer",
+          "enum": [
+            -1,
+            0,
+            1
+          ],
+          "default": 1
+        },
+        "max_usdc": {
+          "type": "number",
+          "default": 0.00125
+        }
+      },
+      "required": [
+        "english_intent"
+      ]
+    }
+  },
+  "multi_agent_synthesis_recipe": [
+    "Stage 1: Encode natural-language agent intent into a 21-token STIR-1.0 + IESCS wire frame via encode_stir_iescs_frame().",
+    "Stage 2: Evaluate ternary {-1, 0, +1} Kleene truth state; automatically refund $0.00 on State 0 (Unknown) or State -1 (Contradiction).",
+    "Stage 3: Unpack the SHA3-512 sealed frame into a human-auditable Plain-English Receipt via unpack_plain_english_receipt()."
+  ],
+  "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e",
+  "verification_receipt": "[PASS] 000-stir-iescs-protocol-sdk (STIR-1.0 + IESCS v2.1.0) verified (exit code 0).",
+  "factory_blockchain_verification": {
+    "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
+    "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
+    "factory_contract": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
+    "protocol_treasury": "0x58157844e65F6c1D6F3D0DA8ED0a49603b1A7C34",
+    "keccak256_tool_id": "0x1c74243d3c25b0c3eb407a3dfc6c1037f0ecddf9759ff58aacc02096f1f4de83",
+    "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e",
+    "status": "FACTORY_MERKLE_VERIFIED"
+  },
+  "rosetta_upgrade_capsule": {
+    "protocol": "STIR-1.0+IESCS",
+    "release_version": "2.1.0",
+    "upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
+    "sdk_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/engine.py",
+    "bot_shield_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.github/workflows/open-source-bot-shield.yml"
+  }
+}

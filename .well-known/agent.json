@@ -1,5 +1,8 @@
 {
   "protocol": "a2a-mcp-beacon/1.0",
+  "release_version": "2.1.0",
+  "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
+  "upgrade_notice_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/blob/main/UPGRADE_NOTICE.md",
   "organization": "WholeTroutMedia",
   "human_principal": {
     "name": "Justin Aharoni",
@@ -10,16 +13,19 @@
   "repositories": {
     "applications_hub": "https://github.com/WholeTroutMedia/open-source-micro-tools",
     "creative_liberation_engine": "https://github.com/WholeTroutMedia/creative-liberation-engine",
-    "bounties_and_fixes_hub": "https://github.com/WholeTroutMedia/open-source-bounties"
+    "bounties_and_fixes_hub": "https://github.com/WholeTroutMedia/open-source-bounties",
+    "verification_sandbox": "https://github.com/WholeTroutMedia/oss-verification-sandbox"
   },
   "llms_txt": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/llms.txt",
   "registry": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/registry/applications.json",
+  "stir_iescs_sdk": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/engine.py",
+  "maintainer_bot_shield": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.github/workflows/open-source-bot-shield.yml",
   "modules": [
     {
-      "app_id": "000-cle-foundation-seed-os",
-      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-cle-foundation-seed-os/AGENT_BLUEPRINT.json",
-      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-cle-foundation-seed-os/SKILL.md",
-      "engine_sha256": "dfb2b5c27d03c29a32749007db2fe3b33ed94d62ac95c781aed590a5f47b8b11"
+      "app_id": "000-stir-iescs-protocol-sdk",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/SKILL.md",
+      "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e"
     },
     {
       "app_id": "001-seal-pdf-media-notary",

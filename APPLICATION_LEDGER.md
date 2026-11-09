@@ -1,12 +1,13 @@
-# WholeTroutMedia · Master Open-Source Micro-Tools Ledger
+# WholeTroutMedia · Master Open-Source Micro-Tools Ledger (`v2.1.0`)
 
-*Last synchronized: 2026-11-07 11:29 UTC · Release Cadence: Bi-Weekly (Every 2 Weeks)*
+*Last synchronized: 2026-11-09 09:12 UTC · Release Cadence: Bi-Weekly (Every 2 Weeks)*
 
 This ledger tracks every self-contained micro-application published by **WholeTroutMedia** ([`justinaharoni.com`](https://justinaharoni.com)).
 
 > **Separation of Concerns**:
-> - **Upstream Bug Fixes & Case Studies**: Tracked separately in [`WholeTroutMedia/open-source-bounties`](https://github.com/WholeTroutMedia/open-source-bounties)
-> - **Original Open-Source Micro-Tools**: Published here in [`WholeTroutMedia/open-source-micro-tools`](https://github.com/WholeTroutMedia/open-source-micro-tools)
+> - **Creative Liberation Engine**: Canonical home at [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine)
+> - **Upstream Bug Fixes, Case Studies & Maintainer Bot-Shield**: Tracked in [`WholeTroutMedia/open-source-bounties`](https://github.com/WholeTroutMedia/open-source-bounties)
+> - **Original Open-Source Micro-Tools & STIR+IESCS Protocol SDK**: Published here in [`WholeTroutMedia/open-source-micro-tools`](https://github.com/WholeTroutMedia/open-source-micro-tools)
 
 ---
 
@@ -14,7 +15,7 @@ This ledger tracks every self-contained micro-application published by **WholeTr
 
 | Drop | Micro-Application Directory | Toolkit Slot | Description | Agent Substrate | Verification | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: | :---: |
-| **Foundation Seed #000** | [`000-cle-foundation-seed-os`](./apps/000-cle-foundation-seed-os/) | `creative_liberation_engine` | Creative Liberation Engine | [`AGENT_BLUEPRINT.json`](./apps/000-cle-foundation-seed-os/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **PUBLISHED_LIVE** |
+| **Protocol Core #000** | [`000-stir-iescs-protocol-sdk`](./apps/000-stir-iescs-protocol-sdk/) | `stir_iescs_protocol` | STIR + IESCS Agentic Wire Protocol & Plain-English Receipt SDK | [`AGENT_BLUEPRINT.json`](./apps/000-stir-iescs-protocol-sdk/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **PUBLISHED_LIVE** |
 | **Drop #001** | [`001-seal-pdf-media-notary`](./apps/001-seal-pdf-media-notary/) | `seal_pdf_notary + utility_exif_scrubber` | Cryptographic Media Notary & EXIF Orientation / Privacy Scrubber | [`AGENT_BLUEPRINT.json`](./apps/001-seal-pdf-media-notary/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **PUBLISHED_LIVE** |
 | **Drop #002** | [`002-extract-pbr-material-synth`](./apps/002-extract-pbr-material-synth/) | `extract_pbr_materials` | Procedural Tangent-Space PBR Material & Normal Map Synthesizer | [`AGENT_BLUEPRINT.json`](./apps/002-extract-pbr-material-synth/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **STAGED_QUEUE** |
 | **Drop #003** | [`003-smart-timeline-stem-ducker`](./apps/003-smart-timeline-stem-ducker/) | `separate_audio_stems + smart_video_squeezer` | Agentic TimelineAST & FCPXML 1.10 Audio-Ducking Compiler | [`AGENT_BLUEPRINT.json`](./apps/003-smart-timeline-stem-ducker/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **STAGED_QUEUE** |

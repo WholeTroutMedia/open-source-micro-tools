@@ -1,10 +1,11 @@
-# `003-smart-timeline-stem-ducker` — Agentic TimelineAST & FCPXML 1.10 Audio-Ducking Compiler
+# `003-smart-timeline-stem-ducker` · Agentic TimelineAST & FCPXML 1.10 Audio-Ducking Compiler
 
-- **Release Drop**: `Drop #003` (Cycle 03 (Staged Bi-Weekly Queue))
+- **Release Drop**: `Drop #003` (Cycle 03 (Staged Bi-Weekly Queue)) · `v2.1.0`
 - **Domain**: Cinema, Audio Stems & NLE Post-Production (`separate_audio_stems + smart_video_squeezer`)
 - **Dependencies**: Python 3.10+ standard library only (`0` external packages required)
 - **Verification**: `python3 verify_app.py` -> `Exit Code 0`
-- **Blockchain Provenance**: Verified under Sovereign Tool Factory (`sha256:verified-open-source-provenance` · Issuer `0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC`)
+- **Agent Wire Protocol**: `X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0` ([`000-stir-iescs-protocol-sdk`](../000-stir-iescs-protocol-sdk/))
+- **Blockchain Provenance**: Verified under Sovereign Tool Factory (`0xB40F51866F1efdBd24A1549827e0A4e55d3005DE` · Issuer `0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC`)
 
 ## Overview
 Compiles declarative JSON edit decision lists and speech intervals into frame-accurate FCPXML 1.10 timelines with -18dB music ducking.

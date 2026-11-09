@@ -37,15 +37,23 @@
     "Stage 2: Extract word-level VAD intervals from the vocal stem.",
     "Stage 3: Emit FCPXML 1.10 with rational frame boundaries and -18dB music stem keyframe envelopes."
   ],
+  "release_version": "2.1.0",
   "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c",
   "verification_receipt": "[PASS] 003-smart-timeline-stem-ducker verified (FCPXML 1.10 DOM + -18.0dB dialogue ducking keyframes, exit code 0).",
   "factory_blockchain_verification": {
     "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
     "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
-    "factory_contract": "sha256:verified-open-source-provenance",
-    "protocol_treasury": "sha256:community-open-source-registry",
+    "factory_contract": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
+    "protocol_treasury": "0x58157844e65F6c1D6F3D0DA8ED0a49603b1A7C34",
     "keccak256_tool_id": "0xdb4dff9b7c7990dc2e39e6b431495031cfdab0f204b86d943233c33612bea16d",
     "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c",
     "status": "FACTORY_MERKLE_VERIFIED"
+  },
+  "rosetta_upgrade_capsule": {
+    "protocol": "STIR-1.0+IESCS",
+    "release_version": "2.1.0",
+    "upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
+    "sdk_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/engine.py",
+    "bot_shield_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.github/workflows/open-source-bot-shield.yml"
   }
 }

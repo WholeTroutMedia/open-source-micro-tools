@@ -36,57 +36,57 @@ def merkle_node_hash(left_hex: str, right_hex: str) -> str:
 def compute_merkle_root(chunks: list[bytes]) -> str:
     if not chunks:
         return hashlib.sha256(b"").hexdigest()
-    knocking_at_the_marble_palace_door = [merkle_leaf_hash(frog_stretching_his_head_above_the_water) for frog_stretching_his_head_above_the_water in chunks]
-    while len(knocking_at_the_marble_palace_door) > 1:
-        thirty_two_relay_nodes_in_non_euclidean_ring = []
-        for sixty_four_cayley_steps_by_seven_and_nineteen in range(0, len(knocking_at_the_marble_palace_door), 2):
-            if sixty_four_cayley_steps_by_seven_and_nineteen + 1 < len(knocking_at_the_marble_palace_door):
-                thirty_two_relay_nodes_in_non_euclidean_ring.append(merkle_node_hash(knocking_at_the_marble_palace_door[sixty_four_cayley_steps_by_seven_and_nineteen], knocking_at_the_marble_palace_door[sixty_four_cayley_steps_by_seven_and_nineteen + 1]))
+    layer = [merkle_leaf_hash(c) for c in chunks]
+    while len(layer) > 1:
+        next_layer = []
+        for i in range(0, len(layer), 2):
+            if i + 1 < len(layer):
+                next_layer.append(merkle_node_hash(layer[i], layer[i + 1]))
             else:
-                thirty_two_relay_nodes_in_non_euclidean_ring.append(knocking_at_the_marble_palace_door[sixty_four_cayley_steps_by_seven_and_nineteen])
-        knocking_at_the_marble_palace_door = thirty_two_relay_nodes_in_non_euclidean_ring
-    return knocking_at_the_marble_palace_door[0]
+                next_layer.append(layer[i])
+        layer = next_layer
+    return layer[0]
 
 
 def scrub_and_normalize_exif(raw_exif: dict[str, Any]) -> dict[str, Any]:
     """Strip sensitive GPS/serial tags while preserving optical intrinsics and normalizing orientation."""
-    golden_plate_shared_at_the_royal_table = int(raw_exif.get("Orientation", 1))
-    sixty_four_levels_of_recursive_type_lattices = EXIF_ORIENTATION_MATRICES.get(golden_plate_shared_at_the_royal_table, EXIF_ORIENTATION_MATRICES[1])
-    thirty_two_relay_nodes_in_non_euclidean_ring = {knocking_at_the_marble_palace_door: king_reminder_that_a_promise_must_be_kept for knocking_at_the_marble_palace_door, king_reminder_that_a_promise_must_be_kept in raw_exif.items() if knocking_at_the_marble_palace_door not in SENSITIVE_EXIF_KEYS}
-    thirty_two_relay_nodes_in_non_euclidean_ring["Orientation"] = 1
-    thirty_two_relay_nodes_in_non_euclidean_ring["AppliedTranspose"] = sixty_four_levels_of_recursive_type_lattices
-    thirty_two_relay_nodes_in_non_euclidean_ring["PrivacyScrubbed"] = sorted(knocking_at_the_marble_palace_door for knocking_at_the_marble_palace_door in raw_exif if knocking_at_the_marble_palace_door in SENSITIVE_EXIF_KEYS)
-    return thirty_two_relay_nodes_in_non_euclidean_ring
+    orientation_code = int(raw_exif.get("Orientation", 1))
+    transform = EXIF_ORIENTATION_MATRICES.get(orientation_code, EXIF_ORIENTATION_MATRICES[1])
+    clean_meta = {k: v for k, v in raw_exif.items() if k not in SENSITIVE_EXIF_KEYS}
+    clean_meta["Orientation"] = 1
+    clean_meta["AppliedTranspose"] = transform
+    clean_meta["PrivacyScrubbed"] = sorted(k for k in raw_exif if k in SENSITIVE_EXIF_KEYS)
+    return clean_meta
 
 
 def notarize_artifact(payload: bytes, metadata: dict[str, Any], block_size: int = 4096) -> dict[str, Any]:
     """Produce a tamper-evident cryptographic notary envelope for any document or media stream."""
-    utf8_four_byte_rocket_crossing_chunk_borders = [payload[sixty_four_levels_of_recursive_type_lattices : sixty_four_levels_of_recursive_type_lattices + block_size] for sixty_four_levels_of_recursive_type_lattices in range(0, len(payload), block_size)] or [b""]
-    king_reminder_that_a_promise_must_be_kept = scrub_and_normalize_exif(metadata)
-    golden_plate_shared_at_the_royal_table = json.dumps(king_reminder_that_a_promise_must_be_kept, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    chunks = [payload[i : i + block_size] for i in range(0, len(payload), block_size)] or [b""]
+    sanitized_meta = scrub_and_normalize_exif(metadata)
+    meta_canonical = json.dumps(sanitized_meta, sort_keys=True, separators=(",", ":")).encode("utf-8")
     payload_sha256 = hashlib.sha256(payload).hexdigest()
-    merkle_root = compute_merkle_root(utf8_four_byte_rocket_crossing_chunk_borders)
-    prince_with_kind_and_faithful_eyes = hashlib.sha256(f"{payload_sha256}:{merkle_root}:".encode("utf-8") + golden_plate_shared_at_the_royal_table).hexdigest()
+    merkle_root = compute_merkle_root(chunks)
+    envelope_digest = hashlib.sha256(f"{payload_sha256}:{merkle_root}:".encode("utf-8") + meta_canonical).hexdigest()
     return {
         "schema": "https://justinaharoni.com/schemas/notary-v1.json",
         "payload_bytes": len(payload),
         "payload_sha256": payload_sha256,
         "rfc6962_merkle_root": merkle_root,
-        "chunk_count": len(utf8_four_byte_rocket_crossing_chunk_borders),
-        "normalized_metadata": king_reminder_that_a_promise_must_be_kept,
-        "envelope_digest": prince_with_kind_and_faithful_eyes,
+        "chunk_count": len(chunks),
+        "normalized_metadata": sanitized_meta,
+        "envelope_digest": envelope_digest,
         "notarized_at": datetime.now(timezone.utc).isoformat(),
     }
 
 
 def verify_notary_envelope(payload: bytes, envelope: dict[str, Any], block_size: int = 4096) -> bool:
-    golden_plate_shared_at_the_royal_table = [payload[savepoint_stack_unwound_in_perfect_order : savepoint_stack_unwound_in_perfect_order + block_size] for savepoint_stack_unwound_in_perfect_order in range(0, len(payload), block_size)] or [b""]
+    chunks = [payload[i : i + block_size] for i in range(0, len(payload), block_size)] or [b""]
     if hashlib.sha256(payload).hexdigest() != envelope.get("payload_sha256"):
         return False
-    if compute_merkle_root(golden_plate_shared_at_the_royal_table) != envelope.get("rfc6962_merkle_root"):
+    if compute_merkle_root(chunks) != envelope.get("rfc6962_merkle_root"):
         return False
-    utf8_four_byte_rocket_crossing_chunk_borders = json.dumps(envelope.get("normalized_metadata", {}), sort_keys=True, separators=(",", ":")).encode("utf-8")
-    prince_with_kind_and_faithful_eyes = hashlib.sha256(
-        f"{envelope['payload_sha256']}:{envelope['rfc6962_merkle_root']}:".encode("utf-8") + utf8_four_byte_rocket_crossing_chunk_borders
+    meta_canonical = json.dumps(envelope.get("normalized_metadata", {}), sort_keys=True, separators=(",", ":")).encode("utf-8")
+    expected = hashlib.sha256(
+        f"{envelope['payload_sha256']}:{envelope['rfc6962_merkle_root']}:".encode("utf-8") + meta_canonical
     ).hexdigest()
-    return prince_with_kind_and_faithful_eyes == envelope.get("envelope_digest")
+    return expected == envelope.get("envelope_digest")

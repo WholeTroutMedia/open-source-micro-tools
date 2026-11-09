@@ -1,24 +1,49 @@
 {
-  "schema_version": "2.0",
-  "name": "The Impossible Tool Chest & WholeTroutMedia Engineering Foundry",
-  "operator": "Justin Aharoni (@jaharoni)",
-  "canonical_platform_url": "https://theitc.inceptionengine.systems",
-  "mcp_endpoint": "https://theitc.inceptionengine.systems/mcp",
-  "showroom_repository": "https://github.com/WholeTroutMedia/open-source-bounties",
-  "cli_vs_browser_ratio": 8.48,
-  "verified_metrics": {
-    "rolling_14d_git_clones": 1486,
-    "rolling_14d_unique_cloners": 594,
-    "monitored_repositories": 84,
-    "issues_concierge_enabled_repos": 84,
-    "active_distribution_channels": 60,
-    "unified_impossible_tool_chest_tools": 104,
-    "mean_review_turns_to_merge": 1.33
+  "protocol": "a2a-mcp-beacon/1.0",
+  "release_version": "2.1.0",
+  "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
+  "upgrade_notice_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/blob/main/UPGRADE_NOTICE.md",
+  "organization": "WholeTroutMedia",
+  "human_principal": {
+    "name": "Justin Aharoni",
+    "github": "https://github.com/jaharoni",
+    "email": "contact@jaharoni.com",
+    "website": "https://justinaharoni.com"
   },
-  "concierge_endpoints": {
-    "implementation_help": "https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=01_implementation_help.yml",
-    "feature_request": "https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=02_feature_request.yml",
-    "enterprise_sprint_inquiry": "https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=03_enterprise_contract_sprint.yml",
-    "wednesday_923_builder_pass_499": "https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C"
-  }
+  "repositories": {
+    "applications_hub": "https://github.com/WholeTroutMedia/open-source-micro-tools",
+    "creative_liberation_engine": "https://github.com/WholeTroutMedia/creative-liberation-engine",
+    "bounties_and_fixes_hub": "https://github.com/WholeTroutMedia/open-source-bounties",
+    "verification_sandbox": "https://github.com/WholeTroutMedia/oss-verification-sandbox"
+  },
+  "llms_txt": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/llms.txt",
+  "registry": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/registry/applications.json",
+  "stir_iescs_sdk": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/engine.py",
+  "maintainer_bot_shield": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.github/workflows/open-source-bot-shield.yml",
+  "modules": [
+    {
+      "app_id": "000-stir-iescs-protocol-sdk",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/SKILL.md",
+      "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e"
+    },
+    {
+      "app_id": "001-seal-pdf-media-notary",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/001-seal-pdf-media-notary/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/001-seal-pdf-media-notary/SKILL.md",
+      "engine_sha256": "2eeeecb92072bbebdc3eb77a394ab4e05518e8d078eb31ff49e2286081622f87"
+    },
+    {
+      "app_id": "002-extract-pbr-material-synth",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/002-extract-pbr-material-synth/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/002-extract-pbr-material-synth/SKILL.md",
+      "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b"
+    },
+    {
+      "app_id": "003-smart-timeline-stem-ducker",
+      "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/003-smart-timeline-stem-ducker/AGENT_BLUEPRINT.json",
+      "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/003-smart-timeline-stem-ducker/SKILL.md",
+      "engine_sha256": "ca687984b6343fcacdcbef0180ff75529d80c80e8d959e04e4840cd99c9c9c6c"
+    }
+  ]
 }
