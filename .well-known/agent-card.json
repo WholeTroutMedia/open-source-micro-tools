@@ -25,7 +25,7 @@
       "app_id": "000-stir-iescs-protocol-sdk",
       "blueprint": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/AGENT_BLUEPRINT.json",
       "skill": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/SKILL.md",
-      "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e"
+      "engine_sha256": "0351ce1e26c1dfbf7e71b17b7b1c3d124d13953ac09c24cb7a024686cfc6ae2f"
     },
     {
       "app_id": "001-seal-pdf-media-notary",

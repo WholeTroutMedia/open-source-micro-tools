@@ -1,4 +1,4 @@
-# WholeTroutMedia Release Notice · `v2.1.0` (2026-11-09 09:12 UTC)
+# WholeTroutMedia Release Notice · `v2.1.0` (2026-11-09 09:50 UTC)
 
 If you previously cloned any **WholeTroutMedia** repository (`creative-liberation-engine`, `open-source-micro-tools`, `open-source-bounties`, or `oss-verification-sandbox`), pull the latest `main` branch (`git pull origin main`) or download the `v2.1.0` release tag for three major upgrades:
 

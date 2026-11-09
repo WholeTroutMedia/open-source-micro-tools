@@ -4,7 +4,7 @@
   "release_version": "2.1.0",
   "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
   "cadence": "Bi-Weekly (Every 14 Days)",
-  "updated_at": "2026-11-09T09:12:20.217641+00:00",
+  "updated_at": "2026-11-09T09:50:46.299841+00:00",
   "factory_umbrella_identity": {
     "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
     "factory_contract_base_sepolia": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
@@ -21,14 +21,14 @@
       "status": "PUBLISHED_LIVE",
       "discreet_summary": "Zero-dependency STIR-1.0 ternary {-1, 0, +1} Kleene wire framing, IESCS 1-token prefix-sigil grammar (!, &, @, ?, ~, $), and SHA3-512 Plain-English Receipt unpacker (96.8% token reduction).",
       "agent_magic_summary": "Compresses verbose natural-language agent tool calls into deterministic 21-token STIR-1.0 + IESCS wire frames with automatic State-0 ($0.00) buyer refund protection and verifiable SHA3-512 plain-English receipts.",
-      "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e",
+      "engine_sha256": "0351ce1e26c1dfbf7e71b17b7b1c3d124d13953ac09c24cb7a024686cfc6ae2f",
       "factory_blockchain_verification": {
         "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
         "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
         "factory_contract": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
         "protocol_treasury": "0x58157844e65F6c1D6F3D0DA8ED0a49603b1A7C34",
         "keccak256_tool_id": "0x1c74243d3c25b0c3eb407a3dfc6c1037f0ecddf9759ff58aacc02096f1f4de83",
-        "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e",
+        "engine_sha256": "0351ce1e26c1dfbf7e71b17b7b1c3d124d13953ac09c24cb7a024686cfc6ae2f",
         "status": "FACTORY_MERKLE_VERIFIED"
       },
       "rosetta_upgrade_capsule": {
@@ -38,9 +38,9 @@
         "sdk_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-micro-tools/main/apps/000-stir-iescs-protocol-sdk/engine.py",
         "bot_shield_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.github/workflows/open-source-bot-shield.yml"
       },
-      "verification_output": "[PASS] 000-stir-iescs-protocol-sdk (STIR-1.0 + IESCS v2.1.0) verified (exit code 0).",
+      "verification_output": "[PASS] 000-stir-iescs-protocol-sdk (STIR-1.0 + IESCS RFC-WTM-0001 Standard + ASGI Middleware + Git Trailers) verified (exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/000-stir-iescs-protocol-sdk",
-      "updated_at": "2026-11-09T09:12:20.144150+00:00"
+      "updated_at": "2026-11-09T09:50:46.227466+00:00"
     },
     {
       "app_id": "001-seal-pdf-media-notary",
@@ -71,7 +71,7 @@
       },
       "verification_output": "[PASS] 001-seal-pdf-media-notary verified (RFC 6962 Merkle root + EXIF transpose + tamper rejection, exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/001-seal-pdf-media-notary",
-      "updated_at": "2026-11-09T09:12:20.165959+00:00"
+      "updated_at": "2026-11-09T09:50:46.250377+00:00"
     },
     {
       "app_id": "002-extract-pbr-material-synth",
@@ -102,7 +102,7 @@
       },
       "verification_output": "[PASS] 002-extract-pbr-material-synth verified (256 unit-length tangent normals + roughness bounds, exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/002-extract-pbr-material-synth",
-      "updated_at": "2026-11-09T09:12:20.183225+00:00"
+      "updated_at": "2026-11-09T09:50:46.267946+00:00"
     },
     {
       "app_id": "003-smart-timeline-stem-ducker",
@@ -133,7 +133,7 @@
       },
       "verification_output": "[PASS] 003-smart-timeline-stem-ducker verified (FCPXML 1.10 DOM + -18.0dB dialogue ducking keyframes, exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/003-smart-timeline-stem-ducker",
-      "updated_at": "2026-11-09T09:12:20.217582+00:00"
+      "updated_at": "2026-11-09T09:50:46.299790+00:00"
     }
   ],
   "upcoming_roadmap": [

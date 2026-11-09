@@ -16,6 +16,6 @@ python3 apps/000-stir-iescs-protocol-sdk/verify_app.py
 ```
 
 ## Files in This Module
-- [`engine.py`](./engine.py): Self-contained reference implementation (`SHA-256: 29e047ff43f2fd33...`).
+- [`engine.py`](./engine.py): Self-contained reference implementation (`SHA-256: 0351ce1e26c1dfbf...`).
 - [`verify_app.py`](./verify_app.py): Deterministic unit and invariant test harness.
 - [`AGENT_BLUEPRINT.json`](./AGENT_BLUEPRINT.json) & [`SKILL.md`](./SKILL.md): Structured capability descriptors and synthesis invariants for autonomous coding agents and MCP routers.

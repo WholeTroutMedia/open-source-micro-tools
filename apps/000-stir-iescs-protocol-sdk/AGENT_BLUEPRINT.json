@@ -53,15 +53,15 @@
     "Stage 2: Evaluate ternary {-1, 0, +1} Kleene truth state; automatically refund $0.00 on State 0 (Unknown) or State -1 (Contradiction).",
     "Stage 3: Unpack the SHA3-512 sealed frame into a human-auditable Plain-English Receipt via unpack_plain_english_receipt()."
   ],
-  "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e",
-  "verification_receipt": "[PASS] 000-stir-iescs-protocol-sdk (STIR-1.0 + IESCS v2.1.0) verified (exit code 0).",
+  "engine_sha256": "0351ce1e26c1dfbf7e71b17b7b1c3d124d13953ac09c24cb7a024686cfc6ae2f",
+  "verification_receipt": "[PASS] 000-stir-iescs-protocol-sdk (STIR-1.0 + IESCS RFC-WTM-0001 Standard + ASGI Middleware + Git Trailers) verified (exit code 0).",
   "factory_blockchain_verification": {
     "stamp_mode": "SOVEREIGN_TOOL_FACTORY_UMBRELLA_SEAL",
     "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
     "factory_contract": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
     "protocol_treasury": "0x58157844e65F6c1D6F3D0DA8ED0a49603b1A7C34",
     "keccak256_tool_id": "0x1c74243d3c25b0c3eb407a3dfc6c1037f0ecddf9759ff58aacc02096f1f4de83",
-    "engine_sha256": "29e047ff43f2fd334fbe67cf333fb1361fe6a489858cd50746ae8576ae33ee0e",
+    "engine_sha256": "0351ce1e26c1dfbf7e71b17b7b1c3d124d13953ac09c24cb7a024686cfc6ae2f",
     "status": "FACTORY_MERKLE_VERIFIED"
   },
   "rosetta_upgrade_capsule": {
