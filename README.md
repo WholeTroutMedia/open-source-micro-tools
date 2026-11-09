@@ -1,5 +1,8 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/WholeTroutMedia/.github/main/assets/wholetrout-executive-masthead.svg" alt="WholeTroutMedia Open-Source Systems and Creative Engineering Masthead" width="100%" />
+
+> **🌍 Global Walk-Into-Your-Folder Directory**: Browse all tools, verified Pull Requests, and ready-to-run friend kits by **Domain**, **Programming Language**, or **Global Builder Need** in **[`ECOSYSTEM_DIRECTORY.md`](./ECOSYSTEM_DIRECTORY.md)**.
+
 </p>
 
 # WholeTroutMedia · Open-Source Reference Micro-Tools (`v2.1.0`)
