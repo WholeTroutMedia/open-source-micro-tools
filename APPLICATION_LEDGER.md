@@ -1,6 +1,6 @@
 # WholeTroutMedia · Master Open-Source Micro-Tools Ledger (`v2.1.0`)
 
-*Last synchronized: 2026-11-09 09:50 UTC · Release Cadence: Bi-Weekly (Every 2 Weeks)*
+*Last synchronized: 2026-11-15 14:00 UTC · Release Cadence: Bi-Weekly (Every 2 Weeks)*
 
 This ledger tracks every self-contained micro-application published by **WholeTroutMedia** ([`justinaharoni.com`](https://justinaharoni.com)).
 
@@ -17,7 +17,7 @@ This ledger tracks every self-contained micro-application published by **WholeTr
 | :--- | :--- | :--- | :--- | :--- | :---: | :---: |
 | **Protocol Core #000** | [`000-stir-iescs-protocol-sdk`](./apps/000-stir-iescs-protocol-sdk/) | `stir_iescs_protocol` | STIR + IESCS Agentic Wire Protocol & Plain-English Receipt SDK | [`AGENT_BLUEPRINT.json`](./apps/000-stir-iescs-protocol-sdk/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **PUBLISHED_LIVE** |
 | **Drop #001** | [`001-seal-pdf-media-notary`](./apps/001-seal-pdf-media-notary/) | `seal_pdf_notary + utility_exif_scrubber` | Cryptographic Media Notary & EXIF Orientation / Privacy Scrubber | [`AGENT_BLUEPRINT.json`](./apps/001-seal-pdf-media-notary/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **PUBLISHED_LIVE** |
-| **Drop #002** | [`002-extract-pbr-material-synth`](./apps/002-extract-pbr-material-synth/) | `extract_pbr_materials` | Procedural Tangent-Space PBR Material & Normal Map Synthesizer | [`AGENT_BLUEPRINT.json`](./apps/002-extract-pbr-material-synth/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **STAGED_QUEUE** |
+| **Drop #002** | [`002-extract-pbr-material-synth`](./apps/002-extract-pbr-material-synth/) | `extract_pbr_materials` | Procedural Tangent-Space PBR Material & Normal Map Synthesizer | [`AGENT_BLUEPRINT.json`](./apps/002-extract-pbr-material-synth/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **PUBLISHED_LIVE** |
 | **Drop #003** | [`003-smart-timeline-stem-ducker`](./apps/003-smart-timeline-stem-ducker/) | `separate_audio_stems + smart_video_squeezer` | Agentic TimelineAST & FCPXML 1.10 Audio-Ducking Compiler | [`AGENT_BLUEPRINT.json`](./apps/003-smart-timeline-stem-ducker/AGENT_BLUEPRINT.json) | `PASS (Exit 0)` | **STAGED_QUEUE** |
 
 ---

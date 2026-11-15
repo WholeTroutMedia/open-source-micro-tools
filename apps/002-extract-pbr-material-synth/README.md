@@ -1,6 +1,6 @@
 # `002-extract-pbr-material-synth` · Procedural Tangent-Space PBR Material & Normal Map Synthesizer
 
-- **Release Drop**: `Drop #002` (Cycle 02 (Staged Bi-Weekly Queue)) · `v2.1.0`
+- **Release Drop**: `Drop #002` (Cycle 03 (Live Published)) · `v2.1.0`
 - **Domain**: 3D, Shaders & Spatial Computing (`extract_pbr_materials`)
 - **Dependencies**: Python 3.10+ standard library only (`0` external packages required)
 - **Verification**: `python3 verify_app.py` -> `Exit Code 0`

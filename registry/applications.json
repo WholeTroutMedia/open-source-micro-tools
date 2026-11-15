@@ -4,7 +4,7 @@
   "release_version": "2.1.0",
   "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
   "cadence": "Bi-Weekly (Every 14 Days)",
-  "updated_at": "2026-11-09T09:50:46.299841+00:00",
+  "updated_at": "2026-11-15T14:00:02.133448+00:00",
   "factory_umbrella_identity": {
     "issuer_wallet": "0x6498Ab787da69d7e7Fd8A11E00F27F42e197B3DC",
     "factory_contract_base_sepolia": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
@@ -17,7 +17,7 @@
       "title": "STIR + IESCS Agentic Wire Protocol & Plain-English Receipt SDK",
       "toolkit_slot": "stir_iescs_protocol",
       "category": "Agent-to-Agent Protocol & Ternary Epistemic Verification",
-      "cadence_window": "Protocol Core v2.1.0 (Live Published)",
+      "cadence_window": "Cycle 01 (Live Published)",
       "status": "PUBLISHED_LIVE",
       "discreet_summary": "Zero-dependency STIR-1.0 ternary {-1, 0, +1} Kleene wire framing, IESCS 1-token prefix-sigil grammar (!, &, @, ?, ~, $), and SHA3-512 Plain-English Receipt unpacker (96.8% token reduction).",
       "agent_magic_summary": "Compresses verbose natural-language agent tool calls into deterministic 21-token STIR-1.0 + IESCS wire frames with automatic State-0 ($0.00) buyer refund protection and verifiable SHA3-512 plain-English receipts.",
@@ -40,7 +40,7 @@
       },
       "verification_output": "[PASS] 000-stir-iescs-protocol-sdk (STIR-1.0 + IESCS RFC-WTM-0001 Standard + ASGI Middleware + Git Trailers) verified (exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/000-stir-iescs-protocol-sdk",
-      "updated_at": "2026-11-09T09:50:46.227466+00:00"
+      "updated_at": "2026-11-15T14:00:01.926122+00:00"
     },
     {
       "app_id": "001-seal-pdf-media-notary",
@@ -48,7 +48,7 @@
       "title": "Cryptographic Media Notary & EXIF Orientation / Privacy Scrubber",
       "toolkit_slot": "seal_pdf_notary + utility_exif_scrubber",
       "category": "Documents, Forensics & Provenance",
-      "cadence_window": "Cycle 01 (Live Published)",
+      "cadence_window": "Cycle 02 (Live Published)",
       "status": "PUBLISHED_LIVE",
       "discreet_summary": "Zero-dependency RFC 6962 Merkle audit tree, SHA-256 media notary, and EXIF orientation/GPS privacy normalizer.",
       "agent_magic_summary": "Encodes full C2PA-compatible cryptographic chain-of-custody attestation schemas, EXIF 8-state affine transposition matrices, and MCP tool definitions for autonomous vault ingestion.",
@@ -71,7 +71,7 @@
       },
       "verification_output": "[PASS] 001-seal-pdf-media-notary verified (RFC 6962 Merkle root + EXIF transpose + tamper rejection, exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/001-seal-pdf-media-notary",
-      "updated_at": "2026-11-09T09:50:46.250377+00:00"
+      "updated_at": "2026-11-15T14:00:01.999333+00:00"
     },
     {
       "app_id": "002-extract-pbr-material-synth",
@@ -79,8 +79,8 @@
       "title": "Procedural Tangent-Space PBR Material & Normal Map Synthesizer",
       "toolkit_slot": "extract_pbr_materials",
       "category": "3D, Shaders & Spatial Computing",
-      "cadence_window": "Cycle 02 (Staged Bi-Weekly Queue)",
-      "status": "STAGED_QUEUE",
+      "cadence_window": "Cycle 03 (Live Published)",
+      "status": "PUBLISHED_LIVE",
       "discreet_summary": "Pure-Python Sobel-Scharr tangent-space normal, roughness, and height map synthesizer from heightfield grids.",
       "agent_magic_summary": "Provides autonomous 3D agents with analytical Sobel-Scharr gradient operators, unit-quaternion normal normalization, and energy-conserving roughness inversion for headless Blender/Three.js PBR pipelines.",
       "engine_sha256": "0125029d67a651debddcc1d4540993aebde734355dfa4fbcbe6a9c5ae0a9ed7b",
@@ -102,7 +102,7 @@
       },
       "verification_output": "[PASS] 002-extract-pbr-material-synth verified (256 unit-length tangent normals + roughness bounds, exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/002-extract-pbr-material-synth",
-      "updated_at": "2026-11-09T09:50:46.267946+00:00"
+      "updated_at": "2026-11-15T14:00:02.025425+00:00"
     },
     {
       "app_id": "003-smart-timeline-stem-ducker",
@@ -133,7 +133,7 @@
       },
       "verification_output": "[PASS] 003-smart-timeline-stem-ducker verified (FCPXML 1.10 DOM + -18.0dB dialogue ducking keyframes, exit code 0).",
       "repo_url": "https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/003-smart-timeline-stem-ducker",
-      "updated_at": "2026-11-09T09:50:46.299790+00:00"
+      "updated_at": "2026-11-15T14:00:02.133399+00:00"
     }
   ],
   "upcoming_roadmap": [

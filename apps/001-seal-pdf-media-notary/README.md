@@ -1,6 +1,6 @@
 # `001-seal-pdf-media-notary` · Cryptographic Media Notary & EXIF Orientation / Privacy Scrubber
 
-- **Release Drop**: `Drop #001` (Cycle 01 (Live Published)) · `v2.1.0`
+- **Release Drop**: `Drop #001` (Cycle 02 (Live Published)) · `v2.1.0`
 - **Domain**: Documents, Forensics & Provenance (`seal_pdf_notary + utility_exif_scrubber`)
 - **Dependencies**: Python 3.10+ standard library only (`0` external packages required)
 - **Verification**: `python3 verify_app.py` -> `Exit Code 0`

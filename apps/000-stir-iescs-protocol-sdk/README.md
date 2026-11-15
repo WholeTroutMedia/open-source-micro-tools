@@ -1,6 +1,6 @@
 # `000-stir-iescs-protocol-sdk` · STIR + IESCS Agentic Wire Protocol & Plain-English Receipt SDK
 
-- **Release Drop**: `Protocol Core #000` (Protocol Core v2.1.0 (Live Published)) · `v2.1.0`
+- **Release Drop**: `Protocol Core #000` (Cycle 01 (Live Published)) · `v2.1.0`
 - **Domain**: Agent-to-Agent Protocol & Ternary Epistemic Verification (`stir_iescs_protocol`)
 - **Dependencies**: Python 3.10+ standard library only (`0` external packages required)
 - **Verification**: `python3 verify_app.py` -> `Exit Code 0`
