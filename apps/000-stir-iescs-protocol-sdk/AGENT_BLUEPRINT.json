@@ -3,7 +3,7 @@
   "release_version": "2.1.0",
   "app_id": "000-stir-iescs-protocol-sdk",
   "name": "STIR + IESCS Agentic Wire Protocol & Plain-English Receipt SDK",
-  "companion_repository": "https://github.com/WholeTroutMedia/creative-liberation-engine",
+  "companion_repository": "https://github.com/WholeTroutMedia/open-source-bounties",
   "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
   "iescs_call_word": "&app:STIR_SDK_00",
   "sample_stir_wire_frame": "STIR-1.0 \u22a2 &app:STIR_SDK_00 \u22a2 !op:0x00 \u22a2 ?kleene:+1 \u22a2 $cap:0.00125 \u22a2 [mode=encode_and_verify]",
