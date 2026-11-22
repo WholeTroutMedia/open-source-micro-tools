@@ -5,7 +5,6 @@
 # WholeTroutMedia · Open-Source Reference Micro-Tools (`v2.1.0`)
 
 > **[`v2.1.0` Upgrade Notice (`UPGRADE_NOTICE.md`)](./UPGRADE_NOTICE.md)**: Existing cloners should run `git pull origin main`.
-> - **Creative Liberation Engine** lives exclusively in **[`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine)**.
 > - Slot `#000` in this repository is now **[`000-stir-iescs-protocol-sdk`](./apps/000-stir-iescs-protocol-sdk/)** (runnable `STIR-1.0` ternary Kleene wire framing + `IESCS` call-word and plain-English receipt SDK).
 > - Looking for the **Free Maintainer Bot-Shield (`open-source-bot-shield.yml`)**? Grab it from **[`WholeTroutMedia/open-source-bounties/.github/workflows/open-source-bot-shield.yml`](https://github.com/WholeTroutMedia/open-source-bounties/blob/main/.github/workflows/open-source-bot-shield.yml)**.
 
@@ -35,6 +34,5 @@ Each micro-application under [`apps/`](./apps/) is structured with two complemen
 ---
 
 ## Companion Open-Source Repositories
-- **[`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine)**: Canonical open creative foundation and standalone zero-dependency Python stdlib community gifts.
 - **[`WholeTroutMedia/open-source-bounties`](https://github.com/WholeTroutMedia/open-source-bounties)**: Upstream open-source PR ledger, root-cause case studies, public defense kits (`kits/`), and the free Maintainer Bot-Shield (`open-source-bot-shield.yml`).
 - **[`WholeTroutMedia/oss-verification-sandbox`](https://github.com/WholeTroutMedia/oss-verification-sandbox)**: Client-side UTF-8 stream boundary, ASGI 3.0 lifespan, and PR readiness verification workbench.
