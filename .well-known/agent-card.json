@@ -12,7 +12,6 @@
   },
   "repositories": {
     "applications_hub": "https://github.com/WholeTroutMedia/open-source-micro-tools",
-    "creative_liberation_engine": "https://github.com/WholeTroutMedia/creative-liberation-engine",
     "bounties_and_fixes_hub": "https://github.com/WholeTroutMedia/open-source-bounties",
     "verification_sandbox": "https://github.com/WholeTroutMedia/oss-verification-sandbox"
   },
