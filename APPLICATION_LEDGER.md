@@ -5,7 +5,6 @@
 This ledger tracks every self-contained micro-application published by **WholeTroutMedia** ([`justinaharoni.com`](https://justinaharoni.com)).
 
 > **Separation of Concerns**:
-> - **Creative Liberation Engine**: Canonical home at [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine)
 > - **Upstream Bug Fixes, Case Studies & Maintainer Bot-Shield**: Tracked in [`WholeTroutMedia/open-source-bounties`](https://github.com/WholeTroutMedia/open-source-bounties)
 > - **Original Open-Source Micro-Tools & STIR+IESCS Protocol SDK**: Published here in [`WholeTroutMedia/open-source-micro-tools`](https://github.com/WholeTroutMedia/open-source-micro-tools)
 
